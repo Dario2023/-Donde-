@@ -1,0 +1,12 @@
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\x64\Debug\Donde.exe.config
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\x64\Debug\Donde.exe
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\x64\Debug\Donde.pdb
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\x64\Debug\Donde.xml
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.vbprojResolveAssemblyReference.cache
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.F_Donde.resources
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.Cargar Persona.resources
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.Resources.resources
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.vbproj.GenerateResource.Cache
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.exe
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.xml
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\x64\Debug\Donde.pdb

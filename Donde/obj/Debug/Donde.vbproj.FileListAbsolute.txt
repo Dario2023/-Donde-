@@ -1,0 +1,13 @@
+C:\Users\DARIO\AppData\Local\Temporary Projects\Donde\bin\Debug\Donde.exe.config
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\Debug\Donde.exe.config
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\Debug\Donde.exe
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\Debug\Donde.pdb
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\bin\Debug\Donde.xml
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.F_Donde.resources
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.Resources.resources
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.vbproj.GenerateResource.Cache
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.exe
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.xml
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.pdb
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.F_CPersona.resources
+D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.Cargar Persona.resources
