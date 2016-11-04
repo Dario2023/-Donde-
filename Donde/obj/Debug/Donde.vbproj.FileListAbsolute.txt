@@ -11,3 +11,7 @@ D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.xml
 D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.pdb
 D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.F_CPersona.resources
 D:\Darius Aguilera\UNAF\PROGRAMACION3\Donde\Donde\Donde\obj\Debug\Donde.Cargar Persona.resources
+C:\Users\DARIO\Documents\-Donde-\Donde\bin\Debug\Donde.exe.config
+C:\Users\DARIO\Documents\-Donde-\Donde\obj\Debug\Donde.exe
+C:\Users\DARIO\Documents\-Donde-\Donde\obj\Debug\Donde.xml
+C:\Users\DARIO\Documents\-Donde-\Donde\obj\Debug\Donde.pdb

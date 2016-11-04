@@ -5,15 +5,17 @@
 Public Class Persona
 
     
-    Private Nombre, Apellido As String
-    Private Dni, Cuil, EstadoCivil As Integer
-    Private FechaNacimiento As Date
+    'Private Nombre, Apellido As String
+    'Private Dni, Cuil, EstadoCivil As Integer
+    'Private FechaNacimiento As Date
 
-    Private TxtNombrea, TxtApellidoa, TxtDnia, TxtTipoa, TxtNumeroa, TxtDigitoVerificadora As TextBox
+    Private Nombre, Apellido, Dni, Tipo, Numero, DigitoVerificador As TextBox
     Private CmbSexoa, CmbEstadoCivila As ComboBox
     Private DtpFNacimientoa As DateTimePicker
 
-    Public Sub AgregarPersona(ByRef Sexop As Byte, ByRef EstadoCivilp As Byte)
+    Public Sub AgregarPersona()
+
+        Dim Conexion As New OracleConnection("Data Source=localhost;User Id=Dorian;Password=123456789;")
 
         Dim Adaptador As OracleDataAdapter
         Dim PersonaDS As New DataSet
@@ -24,12 +26,12 @@ Public Class Persona
         Dim DeleteCmd As New OracleCommand
 
 
-        Registro("APELLIDO") = TxtApellidoa
-        Registro("NOMBRE") = TxtNombrea
-        Registro("DNI") = CInt(TxtDnia.Text)
-        Registro("CUIL") = TxtTipoa.Text + TxtNumeroa.Text + TxtDigitoVerificadora.Text
-        Registro("SEXO") = CType(CmbSexoa.SelectedIndex, Sexop)
-        Registro("ESTADOCIVIL") = CType(CmbEstadoCivila.SelectedIndex, EstadoCivilp)
+        Registro("APELLIDO") = Apellido
+        Registro("NOMBRE") = Nombre
+        Registro("DNI") = CInt(Dni.Text)
+        Registro("CUIL") = Tipo.Text + Numero.Text + DigitoVerificador.Text
+        Registro("SEXO") = CType(CmbSexoa.SelectedIndex, Sexo)
+        Registro("ESTADOCIVIL") = CType(CmbEstadoCivila.SelectedIndex, EstadoCivil)
         Registro("FECHANACIMIENTO") = DtpFNacimientoa.Value
 
         If F_Donde.Accion = TipoAccion.Alta Then
@@ -38,8 +40,8 @@ Public Class Persona
             PersonaDS.Tables("persona").Rows.Remove(Registro)
         End If
 
-        InsertCmd.CommandText = "Insert Into Persona"
-           VALUES (:idpersona,:apellidoynombre,:dni,:cuil,:sexo,:estadocivil,:fechanacimiento)"
+        InsertCmd.CommandText = "Insert Into Persona_CAB"
+           VALUES (:idpersona,:apellido,:nombre,:dni,:cuil,:sexo,:estadocivil,:fechanacimiento)"
         UpdateCmd.CommandText = "Update Persona "
             set Apellido = :apellido,
                 Nombre = :nombre,
@@ -57,21 +59,23 @@ Public Class Persona
         DeleteCmd.Connection = Conexion
 
         InsertCmd.Parameters.Add(New OracleParameter(":idpersona", OracleDbType.Int32, 0, "ID_PERSONA"))
-        InsertCmd.Parameters.Add(New OracleParameter(":apellidoynombre", OracleDbType.Varchar2, 0, "APELLIDOYNOMBRE"))
-        InsertCmd.Parameters.Add(New OracleParameter(":sexo", OracleDbType.Byte, 0, "SEXO"))
+        InsertCmd.Parameters.Add(New OracleParameter(":apellido", OracleDbType.Varchar2, 0, "APELLIDO_PER"))
+        InsertCmd.Parameters.Add(New OracleParameter(":nombre", OracleDbType.Varchar2, 0, "NOMBRE_PER"))
         InsertCmd.Parameters.Add(New OracleParameter(":dni", OracleDbType.Varchar2, 0, "DNI"))
         InsertCmd.Parameters.Add(New OracleParameter(":cuil", OracleDbType.Varchar2, 0, "CUIL"))
-        InsertCmd.Parameters.Add(New OracleParameter(":fechanacimiento", OracleDbType.Date, 0, "FECHANACIMIENTO"))
+        InsertCmd.Parameters.Add(New OracleParameter(":sexo", OracleDbType.Byte, 0, "SEXO"))
         InsertCmd.Parameters.Add(New OracleParameter(":estadocivil", OracleDbType.Byte, 0, "ESTADOCIVIL"))
+        InsertCmd.Parameters.Add(New OracleParameter(":fechanacimiento", OracleDbType.Date, 0, "FECHANACIMIENTO"))
 
-
-        UpdateCmd.Parameters.Add(New OracleParameter(":apellidoynombre", OracleDbType.Varchar2, 0, "APELLIDOYNOMBRE"))
+        UpdateCmd.Parameters.Add(New OracleParameter(":idpersona", OracleDbType.Int32, 0, "ID_PERSONA"))
+        UpdateCmd.Parameters.Add(New OracleParameter(":apellido", OracleDbType.Varchar2, 0, "APELLIDO_PER"))
+        UpdateCmd.Parameters.Add(New OracleParameter(":nombre", OracleDbType.Varchar2, 0, "NOMBRE_PER"))
         UpdateCmd.Parameters.Add(New OracleParameter(":dni", OracleDbType.Varchar2, 8, "DNI"))
         UpdateCmd.Parameters.Add(New OracleParameter(":cuil", OracleDbType.Varchar2, 13, "CUIL"))
         UpdateCmd.Parameters.Add(New OracleParameter(":sexo", OracleDbType.Byte, 0, "SEXO"))
         UpdateCmd.Parameters.Add(New OracleParameter(":estadocivil", OracleDbType.Byte, 0, "ESTADOCIVIL"))
         UpdateCmd.Parameters.Add(New OracleParameter(":fechanacimiento", OracleDbType.Date, 0, "FECHANACIMIENTO"))
-        UpdateCmd.Parameters.Add(New OracleParameter(":idpersona", OracleDbType.Int32, 0, "ID_PERSONA"))
+
 
         DeleteCmd.Parameters.Add(New OracleParameter(":idpersona", OracleDbType.Int32, 0, "ID_PERSONA"))
 
